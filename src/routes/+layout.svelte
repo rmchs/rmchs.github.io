@@ -31,7 +31,7 @@
 						<a href={resolve("/")} class="block px-3 rounded bg-transparent h-full hover:bg-yellow-300">Main Website</a>
 					</li>
 					<li>
-						<a href={resolve("/academics")} class="block px-3 rounded border-0 h-full hover:bg-yellow-300">Academics</a>
+						<a href={resolve("/rmchs_web/academics")} class="block px-3 rounded border-0 h-full hover:bg-yellow-300">Academics</a>
 					</li>
 				</ul>
 			</div>
