@@ -12,7 +12,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<link rel="preload" as="font" href="/fonts/Avenir_Regular.ttf" crossorigin="anonymous">
+	<link rel="preload" as="font" href={asset("/fonts/Avenir_Regular.ttf")} crossorigin="anonymous">
 	<meta name="super-nice-meta-tag" content="six-seven">
 	<title>Ramon Magsaysay (Cubao) High School Sub-section</title>
 </svelte:head>
