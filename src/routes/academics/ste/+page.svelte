@@ -9,11 +9,14 @@
 </script>
 
 <!-- TODO: i18n is built into this project, either use that or hardcode them strings -->
-<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 mt-8 mb-4">RMCHS Science, Technology, and Engineering Program</h1>
+<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 my-12">RMCHS Science, Technology, and Engineering Program</h1>
 
 {#snippet step1()}
     <h4 class="font-bold">I. Submission of Requirements</h4>
     <section>
+        <a href="https://drive.google.com/file/d/1rppWLJbUi-Jr_wXpV_-gOUafKEZ8903f/view?usp=sharing">
+            ℹ️ Click me to open the STEP Application Form you would need to fill out.
+        </a>
         <p>Applicants are required to submit the following documents onsite:</p>
         <ul class="ml-8 list-disc">
             <li><p>Duly accomplished STEP Application Form</p></li>
@@ -72,6 +75,8 @@
             the Department of Education (DepEd) and formerly by the Department of Science and Technology (DOST)
             who piloted the program in 1994.
         </p>
+        <p class="inline">Facebook: </p>
+        <a href="example.com">RMCHS something something</a>
     </Content>
 
     <SubjectMatrix curriculum={"ste"} hasSpecialSubjects={true} specialSubjects={["special1", "special2", "special3"]} />

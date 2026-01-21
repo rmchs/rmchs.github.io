@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Content from "$lib/components/Content.svelte";
 	import StepByStep from "$lib/components/StepByStep.svelte";
+	import SubjectInfo from "$lib/components/SubjectInfo.svelte";
 	import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
     import { m } from '$lib/paraglide/messages.js';
     import type { PageProps } from './$types';
@@ -9,11 +10,14 @@
 </script>
 
 <!-- FIXME: copy paste entire pages? -->
-<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 mt-8 mb-4">RMCHS Special Program in the Arts</h1>
+<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 my-12">RMCHS Special Program in the Arts</h1>
 
 {#snippet step1()}
     <h4 class="font-bold">I. Submission of Requirements</h4>
     <section>
+        <a href="https://drive.google.com/file/d/10Zi_eanUzwlqrqJ8TpfZZqVDr62hnwdx/view?usp=sharing">
+            ℹ️ Click me to open the SPA Application Form you would need to fill out.
+        </a>
         <p>Applicants are required to submit the following documents onsite:</p>
         <ul class="ml-8 list-disc">
             <li><p>Duly accomplished SPA Application Form</p></li>
@@ -50,18 +54,30 @@
             covering a range of art forms and disciplines. This is a program which also helps learners with 
             potentials or talents in the arts that will contribute to the socio-cultural and economic growth of the country.
         </p>
+        <p class="inline">Facebook: </p>
+        <a href="example.com">RMCHS something something</a>
     </Content>
 
-    <SubjectMatrix hasSpecialSubjectContainer={true} hasSpecialSubjects={true}>
-        <p>Any one of the following...</p>
-        <ul class="ml-8 list-disc text-left">
-            <li><p>Music</p></li>
-            <li><p>Visual Arts</p></li>
-            <li><p>Threater Arts</p></li>
-            <li><p>Media Arts</p></li>
-            <li><p>Dance</p></li>
-            <li><p>Creative Writing</p></li>
-        </ul>
+    <SubjectMatrix hasSpecialSubjectContainer={true} hasSpecialSubjects={true} specialSubjRenderAsOne={true}>
+        <tr>
+            <td><SubjectInfo curriculum="spa" grade={7} subject="music" /></td>
+            <td><SubjectInfo curriculum="spa" grade={8} subject="music" /></td>
+            <td><SubjectInfo curriculum="spa" grade={9} subject="music" /></td>
+            <td><SubjectInfo curriculum="spa" grade={10} subject="music" /></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p>Any one of the following:</p>
+                <ul class="ml-8 list-disc text-left">
+                    <li><p>Music</p></li>
+                    <li><p>Visual Arts</p></li>
+                    <li><p>Theater Arts</p></li>
+                    <li><p>Media Arts</p></li>
+                    <li><p>Dance</p></li>
+                    <li><p>Creative Writing</p></li>
+                </ul>
+            </td>
+        </tr>
     </SubjectMatrix>
 
     <section class="flex flex-col gap-4 w-full mt-4">
@@ -77,6 +93,9 @@
                     </ul>
                 </li>
             </ul>
+
+            <!-- spacing -->
+            <p class="mb-2"></p>
         </Content>
     </section>
 </section>

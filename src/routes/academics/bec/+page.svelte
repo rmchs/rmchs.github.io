@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Content from "$lib/components/Content.svelte";
+	import SubjectInfo from "$lib/components/SubjectInfo.svelte";
 import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
     import { m } from '$lib/paraglide/messages.js';
     import type { PageProps } from './$types';
@@ -8,7 +9,7 @@ import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
 </script>
 
 <!-- TODO: i18n is built into this project, either use that or hardcode them strings -->
-<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 mt-8 mb-4">RMCHS Basic Education Curriculum</h1>
+<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 my-12">RMCHS Basic Education Curriculum</h1>
 
 <section class="max-w-10/12 mx-auto">
     <Content title={"Information"}>
@@ -19,7 +20,23 @@ import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
         </p>
     </Content>
 
-    <SubjectMatrix />
+    <SubjectMatrix hasSpecialSubjects={true} hasSpecialSubjectContainer={true} specialSubjRenderAsOne={true}>
+        <tr>
+            <td><SubjectInfo curriculum="bec" grade={7} subject="tle" /></td>
+            <td><SubjectInfo curriculum="bec" grade={8} subject="tle" /></td>
+            <td colspan="2">
+                <p>Any one of the following:</p>
+                <ul class="ml-8 list-disc text-left">
+                    <li><p>Cookery</p></li>
+                    <li><p>Dressmaking</p></li>
+                    <li><p>Massaging</p></li>
+                    <li><p>EIM</p></li>
+                    <li><p>Technical Drafting</p></li>
+                    <li><p>Cosmetology</p></li>
+                </ul>
+            </td>
+        </tr>
+    </SubjectMatrix>
 
     <section class="flex flex-col gap-4 w-full mt-4">
         <Content title={"Enrollment"}>
@@ -33,6 +50,8 @@ import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
                     </ul>
                 </li>
             </ul>
+            <!-- spacing -->
+            <p class="mb-2"></p>
         </Content>
     </section>
 </section>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Content from "$lib/components/Content.svelte";
-import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
+    import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
     import { m } from '$lib/paraglide/messages.js';
     import type { PageProps } from './$types';
 
@@ -8,7 +8,7 @@ import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
 </script>
 
 <!-- TODO: i18n is built into this project, either use that or hardcode them strings -->
-<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 mt-8 mb-4">RMCHS Special Needs Education</h1>
+<h1 class="text-3xl font-bold w-full text-center underline underline-offset-12 my-12">RMCHS Special Needs Education</h1>
 
 <section class="max-w-9/12 mx-auto">
     <Content title={"Information"}>
@@ -16,6 +16,8 @@ import SubjectMatrix from "$lib/components/SubjectMatrix.svelte";
             The Special Needs Education (SNED) Program is an educational program/service designed to meet the needs 
             of children with disabilities who cannot profit from general or regular education.
         </p>
+        <p class="inline">Facebook: </p>
+        <a href="example.com">RMCHS something something</a>
     </Content>
 
     <SubjectMatrix />

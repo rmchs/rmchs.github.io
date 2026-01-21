@@ -50,7 +50,7 @@
             {/each}
         </CarouselContent>
     </Carousel>
-    <p class="w-full text-center">← Swipe or use the arrow buttons to go previous/next →</p>
+    <!-- <p class="w-full text-center">← Swipe or use the arrow buttons to go previous/next →</p> -->
     <Pagination count={count} perPage={1} bind:page={page}>
         {#snippet children({ pages, currentPage })}
             <PaginationContent>

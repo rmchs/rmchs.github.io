@@ -7,7 +7,8 @@
         hasSpecialSubjectContainer = false,
         children = undefined,
         hasSpecialSubjects = false,
-        specialSubjects = []
+        specialSubjects = [],
+        specialSubjRenderAsOne = false,
     } = $props();
 
     const grades = [ 7, 8, 9, 10 ];
@@ -40,9 +41,13 @@
                         <td class="bg-yellow-100" colspan="4">Specialized Subjects</td>
                     </tr>
                     {#if hasSpecialSubjectContainer && children !== undefined}
-                        <tr>
-                            <td colspan="4">{@render children?.()}</td>
-                        </tr>
+                        {#if specialSubjRenderAsOne}
+                            {@render children?.()}
+                        {:else}
+                            <tr>
+                                <td colspan="4">{@render children?.()}</td>
+                            </tr>
+                        {/if}
                     {:else}
                         {#each specialSubjects as subject}
                             <tr>
