@@ -20,7 +20,7 @@
     }
 </script>
 
-<a href={""} class="underline cursor-pointer" onclick={onLinkClicked} {...others}>{subjectInfo?.title}</a>
+<a href={"#"} class="underline cursor-pointer" onclick={onLinkClicked} {...others}>{subjectInfo?.title}</a>
 
 {#if showing && subjectInfo !== undefined}
     <ModalDialog title={subjectInfo.title} closeDialog={closeDialog}>
