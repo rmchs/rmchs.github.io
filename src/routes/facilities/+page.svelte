@@ -31,7 +31,7 @@
     const autoplay = Autoplay(
         {
         delay: 3000,
-        stopOnInteraction: false,
+        stopOnInteraction: true,
         stopOnMouseEnter: false
         }
     );
@@ -75,7 +75,7 @@
 
 <section class="max-w-10/12 mx-auto gap-4">
     <Content className="size-full" title="Explore" centerHeader hasTopMargin={false}>
-        <ul class="grid grid-cols-4 grid-rows-2 grid-flow-col gap-4 mt-4">
+        <ul class="grid grid-cols-4 grid-rows-2 grid-flow-col gap-4 mt-6">
             {#each getFacilities() as facility}
                 {@render facilityItem(facility, getFacilityInfo(facility))}
             {/each}
@@ -103,7 +103,7 @@
                         {#each getFacilityInfo(selected)?.imgPaths as item}
                             <CarouselItem>
                                 <figure>
-                                    <figcaption class="w-full top-0 left-0 text-center font-bold mix-blend-exclusion text-2xl">{item.name}</figcaption>
+                                    <figcaption class="w-full top-0 left-0 my-4 text-center font-bold mix-blend-exclusion text-2xl">{item.name}</figcaption>
                                     <enhanced:img class="max-w-3/4 max-h-3/4 mx-auto" src={asset(item.asset)} alt={item.name} />
                                 </figure>
                             </CarouselItem>
