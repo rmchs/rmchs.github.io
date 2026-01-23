@@ -97,10 +97,6 @@
                 "name": "Canteen"
             },
             {
-                "asset": "/assets/facilities/Main/accounting_office.PNG",
-                "name": "Accounting Office"
-            },
-            {
                 "asset": "/assets/facilities/Main/chess_center.PNG",
                 "name": "Chess Center"
             },
@@ -142,7 +138,7 @@
             },
             {
                 "asset": "/assets/facilities/Main/principals_office.PNG",
-                "name": "Principals Office"
+                "name": "Principal's Office"
             },
             {
                 "asset": "/assets/facilities/Main/property_office.PNG",
