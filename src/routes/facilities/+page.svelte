@@ -24,7 +24,7 @@
     let facilityInfo = $derived(selected !== undefined ? getFacilityInfo(selected) : undefined);
     let dialogOpen = $state(false);
 
-    const MAP_LINK = "https://drive.google.com/file/d/1TXb3EtRgCEog-W7gfewVFnGBDWYvpg0n/view";
+    const MAP_LINK = "https://drive.google.com/file/d/1xbNek8AuwkQhZGGPgIYrmkP6dJRnSiNA/view?usp=drive_link";
 
     let api = $state<CarouselAPI>();
     let count = $derived(api ? api.scrollSnapList().length : 0);
