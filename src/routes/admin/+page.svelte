@@ -16,21 +16,11 @@
     It is limited and there are constraints, therefore this website was created.
 </p>
 <br>
-<p>To any student/administrator who wishes to change anything in this website:</p>
-<ul class="ml-8 list-disc">
-    <li>
-        <p>This website is made in Svelte.</p>
-        <a href="https://svelte.dev/docs/kit">Learn more about Svelte here.</a>
-    </li>
-    <li>
-        <p>
-            Internationalization (i18n) exists in this project, but has not yet been implemented.
-            This means changing the website language is currently not yet supported.
-        </p>
-    </li>
-    <li>
-        <p>Lastly, the source code of this website can be found at...</p>
-        <p>It is currently being hosted at the</p>
-        <a href="https://github.com/rmchsresearchclub">RMCHS Research Club Github account.</a>
-    </li>
-</ul>
+<p>If you are a maintainer, you should've read the handbook for instructions on what to do with these sites.</p>
+<p>If the handbook is somehow unavailable, you can access it via <a href="https://example.com">this link</a> and request access from the original maintainers themselves.</p>
+<br>
+<p>
+    This website and its source code are currently being hosted at the 
+    <a href="https://github.com/rmchs">RMCHS Github account.</a>
+    Feel free to contribute!
+</p>

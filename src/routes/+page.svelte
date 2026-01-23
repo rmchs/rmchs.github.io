@@ -9,19 +9,11 @@
 
 <p><strong>For school/technical administrators:</strong></p>
 <p>
-    This website serves as an embed for some pages in the official 
+    This website serves as a microsite for some pages in the official 
     <a href="https://example.com">Ramon Magsaysay (Cubao) High School</a> website. 
 </p>
 
-<details>
-    <summary>Why?</summary>
-    <a href={resolve("/admin")}>Please visit this link.</a>
-</details>
-
-<br>
-
-<p><strong>For other people:</strong></p>
-<h1 class="font-bold text-xl">You should not be here.</h1>
+<a href={resolve("/admin")}>For more information, please visit this link.</a>
 
 <br>
 
