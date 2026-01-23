@@ -16,7 +16,7 @@
 {#snippet step1()}
     <h4 class="font-bold">I. Submission of Requirements</h4>
     <section>
-        <a href="https://drive.google.com/file/d/10Zi_eanUzwlqrqJ8TpfZZqVDr62hnwdx/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/10Zi_eanUzwlqrqJ8TpfZZqVDr62hnwdx/view?usp=sharing" target="_blank">
             ℹ️ Click me to open the SPA Application Form you would need to fill out.
         </a>
         <p>Applicants are required to submit the following documents onsite:</p>

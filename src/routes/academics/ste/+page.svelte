@@ -15,7 +15,7 @@
 {#snippet step1()}
     <h4 class="font-bold">I. Submission of Requirements</h4>
     <section>
-        <a href="https://drive.google.com/file/d/1rppWLJbUi-Jr_wXpV_-gOUafKEZ8903f/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/1rppWLJbUi-Jr_wXpV_-gOUafKEZ8903f/view?usp=sharing" target="_blank">
             ℹ️ Click me to open the STEP Application Form you would need to fill out.
         </a>
         <p>Applicants are required to submit the following documents onsite:</p>
