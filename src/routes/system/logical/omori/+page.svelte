@@ -1,5 +1,80 @@
-<p>
-    hi chat
-</p>
+<script>
+	import Content from "$lib/components/Content.svelte";
 
-<p>Written on <time datetime="2026-01-22T12:00">January 22, 2026</time></p>
+</script>
+<!-- no touchie this file!! -->
+
+<svelte:head>
+    <meta name="robots" content="noindex">
+    <title>hii</title>
+</svelte:head>
+
+<Content title="hi chat">
+    <p>we made this little website in a span of a week. we did this because</p>
+    <ul class="ml-8 list-disc">
+        <li><p>we wanted to improve the website</p></li>
+        <li><p>work immersion</p></li>
+        <li><p>and to show off my programming skills hehe (work immersion should be aligned with my course)</p></li>
+    </ul>
+    
+    <br>
+    <p>
+        making this website was fun, it feels like i'm contributing to something and leaving a legacy.
+        with the help of Marga (what i call her the lead developer of this project), we've successfully done it!
+
+    </p>
+
+    <br>
+
+    <details>
+        <summary>why Svelte?</summary>
+        <p>
+            i think it's a nice framework.
+            i'm learning this and i'm starting to get the hang of it.
+            i know React and i've tried it (i've tried making a Next.js website),
+            but i guess Svelte is okay enough for this usecase!
+        </p>
+        <p>they say it's a pretty fast framework and it's a compiler</p>
+        <p>it doesn't require that much server-sided interaction, does it?</p>
+    </details>
+    <details>
+        <summary>actually yeah, why is this just a static site?</summary>
+        <p>
+            the school doesn't have a server for hosting this type of stuff.
+            i don't want to operate a server either.
+            so we're locked to one option: static site generation.
+        </p>
+    </details>
+    <details>
+        <summary>who mainly built this microsite?</summary>
+        <p>Marga remade the main Google Sites...</p>
+        <p>me built this microsite in Svelte hosted on GitHub (which is this)...</p>
+    </details>
+    <details>
+       <summary>67</summary> 
+       <p>67 type shi</p>
+    </details>
+    <details>
+       <summary>omori</summary> 
+       <p>OMORI!!</p>
+       <p>SUNNY!!</p>
+       <p>MARI!!</p>
+       <p>AUBREY!!</p>
+       <p>KEL!!</p>
+       <p>HERO!!</p>
+       <p>BASIL!!</p>
+    </details>
+    <details>
+        <summary>you have a website on your own?</summary>
+        <a href="https://brickwall2900.github.io" target="_blank">yes</a>
+    </details>
+
+    <br>
+
+    <p>i wish this website well! i hope our legacy here in RMCHS gets treated well!</p>
+    
+    <br>
+
+    <p>- brickwall2900</p>
+    <p>Written on <time datetime="2026-01-23T12:00">January 23, 2026</time></p>
+</Content>
