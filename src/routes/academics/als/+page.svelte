@@ -7,3 +7,5 @@
 
     let { data }: PageProps = $props();
 </script>
+
+<h1 class="w-full text-center">CONTENT COMING SOON</h1>
