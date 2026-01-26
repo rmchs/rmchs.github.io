@@ -4,7 +4,7 @@ Welcome to the source code of the Ramon Magsaysay (Cubao) High School microsites
 This website was created to bypass the limitations of Google Sites.
 
 > [!IMPORTANT]
-> The author of this repository assumes you have already read the HANDBOOK.
+> The author of this repository assumes you have already read the [HANDBOOK](https://github.com/rmchs/website-docs).
 
 ## Developing and Building
 This is like any other SvelteKit app.
